@@ -1,0 +1,13 @@
+RewriteEngine On
+Directoryindex index.php
+RewriteBase /localhost/public_html/MYPHP/REST/Server
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ index.php
+
+
+#RewriteEngine On
+#RewriteBase /~user9/REST/Server/api/shop/
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^.*$ index.php

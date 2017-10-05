@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /localhost/public_html/MYPHP/REST/Server/api/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ index.php
+
+#RewriteEngine On
+#RewriteBase /~userN/REST/Server/api/shop/
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^.*$ index.php
+#RewriteRule (.*) http://localhost/public_html/MYPHP/REST/Server/api/$1 [P]

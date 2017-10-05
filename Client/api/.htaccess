@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /api/
+RewriteRule (.*) http://localhost/public_html/MYPHP/REST/Server/api/$1 [P]
+
+#RewriteEngine On
+#RewriteBase /api/
+#RewriteRule (.*) http://192.168.0.15/~user9/public_html/REST/Server/api/$1 [P]
+
+#RewriteEngine On
+#RewriteBase /api/
+#RewriteRule (.*) http://192.168.0.15/~user9/REST/Server/api/$1 [P]
+
